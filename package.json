@@ -1,9 +1,15 @@
 {
   "name": "var-env",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Structure your npm scripts better via NODE_ENV",
   "main": "index.js",
+  "bin": {
+    "var-env": "index.js"
+  },
   "repository": "https://github.com/jimzhan/sys-env",
   "author": "Jim Zhan <jim.zhan@me.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "shelljs": "^0.8.2"
+  }
 }
