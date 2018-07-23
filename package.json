@@ -9,7 +9,35 @@
   "repository": "https://github.com/jimzhan/sys-env",
   "author": "Jim Zhan <jim.zhan@me.com>",
   "license": "MIT",
+  "scripts": {
+    "prepush": "npx standard-version --no-verify",
+    "commit": "git add . && git-cz",
+    "commitmsg": "commitlint -e $GIT_PARAMS",
+    "test": "npx ava"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional",
+      "@commitlint/config-lerna-scopes"
+    ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
   "dependencies": {
+    "ava": "^0.25.0",
+    "chalk": "^2.4.1",
     "shelljs": "^0.8.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.0.0",
+    "@commitlint/config-conventional": "^7.0.1",
+    "@commitlint/config-lerna-scopes": "^7.0.0",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "husky": "^0.14.3",
+    "standard-version": "^4.4.0"
   }
 }
