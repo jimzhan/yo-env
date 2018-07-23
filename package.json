@@ -1,0 +1,9 @@
+{
+  "name": "sys-env",
+  "version": "0.1.0",
+  "description": "Structure your npm scripts better via NODE_ENV",
+  "main": "index.js",
+  "repository": "https://github.com/jimzhan/sys-env",
+  "author": "Jim Zhan <jim.zhan@me.com>",
+  "license": "MIT"
+}
