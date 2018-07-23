@@ -34,7 +34,8 @@
     "validation"
   ],
   "scripts": {
-    "prepush": "npx standard-version --no-verify",
+    "preinstall": "npm install --global npx",
+    "prepush": "npm run test && npx standard-version --no-verify",
     "commit": "git add . && git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "test": "npx ava"

@@ -14,8 +14,6 @@ deploy:
   provider: npm
   email: jim.zhan@me.com
   api_key: $NPM_TOKEN
-  on:
-    tags: true
 
 before_script:
   - npm install --global makeshift && makeshift -s @bcoe -r registry.npmjs.org
