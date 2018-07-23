@@ -1,2 +1,3 @@
-# sys-env
-Structure your npm scripts better via NODE_ENV
+# var-env
+
+Structure your npm scripts better via `NODE_ENV`

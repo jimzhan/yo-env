@@ -1,5 +1,5 @@
 {
-  "name": "sys-env",
+  "name": "var-env",
   "version": "0.1.0",
   "description": "Structure your npm scripts better via NODE_ENV",
   "main": "index.js",
