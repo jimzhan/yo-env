@@ -1,10 +1,10 @@
 {
-  "name": "var-env",
+  "name": "yo-env",
   "version": "0.5.0",
   "description": "Structure your npm scripts better via NODE_ENV",
   "main": "index.js",
   "bin": {
-    "var-env": "index.js"
+    "yo-env": "index.js"
   },
   "repository": "https://github.com/jimzhan/sys-env",
   "author": "Jim Zhan <jim.zhan@me.com>",

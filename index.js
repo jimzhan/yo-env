@@ -16,7 +16,7 @@ const key = [evt, env].join(':')
 const args = process.argv.slice(2).join(' ')
 
 if (!(pkg.scripts && pkg.scripts[key])) {
-  console.error(`${chalk.red('[var-env]')} "${key}" is missing`)
+  console.error(`${chalk.red('[yo-env]')} "${key}" is missing`)
   process.exit(1)
 }
 
