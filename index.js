@@ -3,17 +3,24 @@ const path = require('path')
 const chalk = require('chalk')
 const shell = require('shelljs')
 
+/* --- platform & package.json's meta --- */
+const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm'
+const pkg = require(path.resolve(process.cwd(), 'package.json'))
+
+/* --- composite script to be executed --- */
 const env = process.env.NODE_ENV || 'development'
 const evt = process.env.npm_lifecycle_event
-const cmd = [evt, env].join(':')
+const key = [evt, env].join(':')
 
-const pkg = require(path.resolve(process.cwd(), 'package.json'))
-const npm = process.platform === 'win32' ? 'npm.cmd' : 'npm'
+/* --- optional arguments --- */
+const args = process.argv.slice(2).join(' ')
 
-if (!(pkg.scripts && pkg.scripts[cmd])) {
-  console.error(`${chalk.red('[var-env]')} "${cmd}" is missing`)
+if (!(pkg.scripts && pkg.scripts[key])) {
+  console.error(`${chalk.red('[var-env]')} "${key}" is missing`)
   process.exit(1)
 }
 
-shell.exec(`${npm} run ${cmd}`, { silent: false })
+const cmd = args ? `${npm} run ${key} -- ${args}` : `${npm} run ${key}`
+
+shell.exec(cmd, { silent: false })
 
