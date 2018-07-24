@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.0"></a>
+# [0.6.0](https://github.com/jimzhan/sys-env/compare/v0.3.2...v0.6.0) (2018-07-24)
+
+
+### Bug Fixes
+
+* **ref:** fix wrong cmd ref ([845d639](https://github.com/jimzhan/sys-env/commit/845d639))
+* **typo:** fix wrong `npm` ref. literal ([2948613](https://github.com/jimzhan/sys-env/commit/2948613))
+
+
+### Features
+
+* **argv:** enable argv supports ([197a3a5](https://github.com/jimzhan/sys-env/commit/197a3a5))
+
+
+
 <a name="0.5.2"></a>
 ## [0.5.2](https://github.com/jimzhan/sys-env/compare/v0.5.1...v0.5.2) (2018-07-24)
 
