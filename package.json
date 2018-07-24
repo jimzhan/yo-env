@@ -38,6 +38,9 @@
     "prepush": "npm run test && npx standard-version --no-verify",
     "commit": "git add . && git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
+    "start": "node ./index.js",
+    "start:development": "echo 'NODE_ENV=development'",
+    "start:production": "echo 'NODE_ENV=production'",
     "test": "npx ava"
   },
   "commitlint": {
