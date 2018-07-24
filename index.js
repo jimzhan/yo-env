@@ -15,5 +15,5 @@ if (!(pkg.scripts && pkg.scripts[cmd])) {
   process.exit(1)
 }
 
-shell.exec(`{npm} run ${cmd}`, { silent: false })
+shell.exec(`${npm} run ${cmd}`, { silent: false })
 
