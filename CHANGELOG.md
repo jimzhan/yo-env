@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.6.15"></a>
+## [0.6.15](https://github.com/jimzhan/sys-env/compare/v0.6.2...v0.6.15) (2018-07-28)
+
+
+
 <a name="0.6.14"></a>
 ## [0.6.14](https://github.com/jimzhan/sys-env/compare/v0.6.2...v0.6.14) (2018-07-28)
 
