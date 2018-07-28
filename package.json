@@ -1,6 +1,6 @@
 {
   "name": "yo-env",
-  "version": "0.8.2",
+  "version": "0.9.0",
   "description": "Structure your npm scripts better via NODE_ENV",
   "main": "index.js",
   "bin": {
