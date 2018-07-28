@@ -25,3 +25,6 @@ install:
 
 script:
   - npm run test
+
+after_success:
+  - npm adduser --registry=https://registry.npmjs.org/:_authToken=$NPM_TOKEN
