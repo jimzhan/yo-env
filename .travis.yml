@@ -7,7 +7,7 @@ env:
   global:
   - USER="jimzhan"
   - EMAIL="jim.zhan@me.com"
-  - REPO="var-env"
+  - REPO="yo-env"
   - GH_REPO="github.com/${USER}/${REPO}.git"
 
 deploy:
