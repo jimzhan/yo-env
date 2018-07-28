@@ -36,7 +36,6 @@
   "scripts": {
     "preinstall": "npm install --global npx yarn",
     "prepush": "yarn test && npx standard-version --no-verify",
-    "postcommit": "git push --follow-tags origin master",
     "commit": "git add . && git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
     "start": "node ./index.js",
