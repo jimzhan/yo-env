@@ -20,11 +20,11 @@ deploy:
 before_script:
   - npm install --global makeshift && makeshift -s @bcoe -r registry.npmjs.org
 
+before_install:
+ - printf "registry=https://registry.npmjs.org/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+
 install:
   - npm install
 
 script:
   - npm run test
-
-after_success:
-  - npm adduser --registry=https://registry.npmjs.org/:_authToken=$NPM_TOKEN
