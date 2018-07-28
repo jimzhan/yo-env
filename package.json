@@ -33,7 +33,6 @@
     "validation"
   ],
   "scripts": {
-    "preinstall": "npm install --global npx yarn",
     "prepush": "yarn test && npx standard-version --no-verify",
     "commit": "git add . && git-cz",
     "commitmsg": "commitlint -e $GIT_PARAMS",
